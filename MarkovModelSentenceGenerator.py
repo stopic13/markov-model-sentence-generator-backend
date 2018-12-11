@@ -126,6 +126,9 @@ class MarkovModelSentenceGenerator():
         # print the end punctuation
         retStr += sentence[-1][1]
         print(sentence[-1][1])
+        retStr = retStr.replace(" ,", ",")
+        retStr = retStr.replace(" ;", ";")
+
         return retStr
 
 sentence_generator = MarkovModelSentenceGenerator()

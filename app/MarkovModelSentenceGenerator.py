@@ -130,12 +130,12 @@ class MarkovModelSentenceGenerator():
         retStr = retStr.replace(" ;", ";")
 
         return retStr
-
-sentence_generator = MarkovModelSentenceGenerator()
-sentence_generator.create_freq_table("prideandprejudice.txt")
-# sentence_generator.create_freq_table("persuasion.txt")
-# sentence_generator.create_freq_table("sleepingbeauty.txt")
-sentence_generator.create_freq_table("madamebovary.txt")
-
-sentence_generator.compute_weighted_probabilities()
-sentence_generator.generate_sentence()
+#
+# sentence_generator = MarkovModelSentenceGenerator()
+# sentence_generator.create_freq_table("prideandprejudice.txt")
+# # sentence_generator.create_freq_table("persuasion.txt")
+# # sentence_generator.create_freq_table("sleepingbeauty.txt")
+# sentence_generator.create_freq_table("madamebovary.txt")
+#
+# sentence_generator.compute_weighted_probabilities()
+# sentence_generator.generate_sentence()

@@ -2,7 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 
 from random import randint
-from MarkovModelSentenceGenerator import MarkovModelSentenceGenerator
+from ..MarkovModelSentenceGenerator import MarkovModelSentenceGenerator
 
 app = Flask(__name__)
 CORS(app)

@@ -7,7 +7,7 @@ from MarkovModelSentenceGenerator import MarkovModelSentenceGenerator
 app = Flask(__name__)
 CORS(app)
 
-books = ["app/prideandprejudice.txt", "app/madamebovary.txt", "app/persuasion.txt", "app/sleepingbeauty.txt"]
+books = ["prideandprejudice.txt", "madamebovary.txt", "persuasion.txt", "sleepingbeauty.txt"]
 
 @app.route("/")
 def index():

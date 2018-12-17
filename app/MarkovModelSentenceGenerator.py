@@ -4,7 +4,6 @@ import re
 import random
 from pprint import pprint
 import numpy as np
-
 # A class to generate sentences using a second order markov chain
 # In a second-order Markov Model, the probability of transitioning to a state is based only on the current state
 # In this implementation a state is an ordered pair of two words i.e. (The, dog)
@@ -132,10 +131,19 @@ class MarkovModelSentenceGenerator():
         return retStr
 #
 # sentence_generator = MarkovModelSentenceGenerator()
-# sentence_generator.create_freq_table("prideandprejudice.txt")
-# # sentence_generator.create_freq_table("persuasion.txt")
-# # sentence_generator.create_freq_table("sleepingbeauty.txt")
-# sentence_generator.create_freq_table("madamebovary.txt")
+# #sentence_generator.create_freq_table("foo.txt")
+# # # sentence_generator.create_freq_table("persuasion.txt")
+# # # sentence_generator.create_freq_table("sleepingbeauty.txt")
+# # sentence_generator.create_freq_table("madamebovary.txt")
+#
+# sentence_generator.create_freq_table("app/foo.txt")
+#
+# print(sentence_generator.freq_dict)
+#
+# sentence_generator.create_freq_table("app/bar.txt")
+# print(sentence_generator.freq_dict)
+#
 #
 # sentence_generator.compute_weighted_probabilities()
-# sentence_generator.generate_sentence()
+# print(sentence_generator.freq_dict)
+# # sentence_generator.generate_sentence()

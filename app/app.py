@@ -3,12 +3,12 @@ from flask_cors import CORS
 import json
 from random import randint
 # change to.MarkovoModelSentenceGenerator to deploy
-from MarkovModelSentenceGenerator import MarkovModelSentenceGenerator
+from .MarkovModelSentenceGenerator import MarkovModelSentenceGenerator
 
 app = Flask(__name__)
 CORS(app)
 
-BOOK_FILES = ["app/prideandprejudice.txt", "app/madamebovary.txt", "app/persuasion.txt", "app/sleepingbeauty.txt"]
+BOOK_FILES = ["app/prideandprejudice.txt", "app/madamebovary.txt", "app/persuasion.txt", "app/thejungle.txt", "app/alittleprincess.txt"]
 
 @app.route("/")
 def index():

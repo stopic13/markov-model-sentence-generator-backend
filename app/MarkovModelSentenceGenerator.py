@@ -127,6 +127,7 @@ class MarkovModelSentenceGenerator():
         print(sentence[-1][1])
         retStr = retStr.replace(" ,", ",")
         retStr = retStr.replace(" ;", ";")
+        retStr = retStr.replace(" .", ".")
 
         return retStr
 #
